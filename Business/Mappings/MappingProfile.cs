@@ -1,4 +1,8 @@
 ﻿using AutoMapper;
+using Business.Features.Commands.Authentications.SignUpUser;
+using Business.Features.Commands.Authentications.UpdateUser;
+using Business.Models.Users;
+using Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +16,13 @@ namespace Business.Mappings
 		#region  Authentications
 		public MappingProfile()
 		{
-			CreateMap<User, SignUpUserCommands>().ReverseMap();
-			CreateMap<User, UserModel>().ReverseMap();
+			CreateMap<Users, UserDto>().ReverseMap();
+			CreateMap<Users, UserModel>().ReverseMap();
+			CreateMap<SignUpUserCommand, Users>().ReverseMap();
+			CreateMap<SignInUserQuery, Users>().ReverseMap();
+			CreateMap<Users, UserListModel>().ReverseMap();
+			CreateMap<Users, UserUpdateDto>().ReverseMap();
+			CreateMap<Users, UpdateUserCommand>().ReverseMap();
 		}
 		#endregion 
 

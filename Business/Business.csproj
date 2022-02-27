@@ -11,6 +11,7 @@
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.6" />
     <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
@@ -27,12 +28,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Exceptions\" />
-    <Folder Include="Extensions\" />
-    <Folder Include="Features\Queries\" />
-    <Folder Include="FluentValidations\" />
-    <Folder Include="Models\" />
-    <Folder Include="Responses\" />
+    <Folder Include="Features\Commands\DuesControl\" />
+    <Folder Include="Features\Commands\Bills\" />
+    <Folder Include="Features\Commands\Messages\" />
+    <Folder Include="Features\Commands\DuesHouseControl\" />
+    <Folder Include="Features\Commands\HouseBills\" />
+    <Folder Include="Features\Commands\Houses\" />
+    <Folder Include="Features\Commands\Paymennts\" />
+    <Folder Include="Features\Queries\DuesControl\" />
+    <Folder Include="Features\Queries\Bills\" />
+    <Folder Include="Features\Queries\Messages\" />
+    <Folder Include="Features\Queries\DuesHouseControl\" />
+    <Folder Include="Features\Queries\HouseBills\" />
+    <Folder Include="Features\Queries\Houses\" />
+    <Folder Include="Models\Dues\" />
   </ItemGroup>
 
 </Project>

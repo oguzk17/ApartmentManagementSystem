@@ -1,5 +1,7 @@
-﻿using DataAccess.Contracts.Repositories.Commons;
+﻿using Business.Contracts.Repositories;
+using DataAccess.Contracts.Repositories.Commons;
 using DataAccess.Data;
+using Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,3 +16,5 @@ namespace DataAccess.Contracts.Repositories
         {
         }
     }
+
+}

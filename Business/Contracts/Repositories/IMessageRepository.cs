@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 namespace Business.Contracts.Repositories
 {
 	public interface IMessageRepository: IRepositoryBase<Message> 
-	{ 
+	{
+		Task<IReadOnlyList<Message>> GetAllReceiveMessageDetail(int userId);
+		Task<IReadOnlyList<Message>> GetAllSendMessageDetail(int userId);
 
 	}
 }

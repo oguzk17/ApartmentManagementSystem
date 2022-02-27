@@ -10,5 +10,6 @@ namespace Business.Contracts.Repositories
 {
 public interface IHouseBillRepository : IRepositoryBase<HouseBill> 
 	{
+		Task<IReadOnlyList<HouseBill>> GetAllDetails();
 	}
 }

@@ -32,7 +32,10 @@ namespace WebApi
 			services.AddService(Configuration);
 			services.AddDataAccessServices(Configuration);
 			services.AddControllers();
-			
+
+			services.AddCors(options =>
+			   options.AddDefaultPolicy(builder =>
+			   builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
 			services.AddSwaggerGen(c =>
 			{
 				c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi", Version = "v1" });

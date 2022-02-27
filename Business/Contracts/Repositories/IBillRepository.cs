@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Business.Contracts.Repositories
 {
-	public interface IBillsRepository : IRepositoryBase<Bills>
+	public interface IBillRepository : IRepositoryBase<Bills>
 	{
 	}
 }

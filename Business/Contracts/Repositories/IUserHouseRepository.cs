@@ -1,4 +1,5 @@
 ﻿using Business.Contracts.Repositories.Commons;
+using Business.Models.UserHouses;
 using Entities;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,6 @@ namespace Business.Contracts.Repositories
 {
 	public interface  IUserHouseRepository: IRepositoryBase<UserHouse>
 	{
-		Task<UserHouseDto> GetUserResidenceDetail();
+		Task<UserHouseDto> GetUserHouseDetail();
 	}
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Commons;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-	public class Bills
+	public class Bills: PayBase
 	{
-		public int Id { get; set; }
+
+		public IEnumerable<HouseBill> HouseBills { get; set; }
+
 
 
 	}

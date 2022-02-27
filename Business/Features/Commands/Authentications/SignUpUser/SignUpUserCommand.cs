@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Business.Features.Commands.Authentications.SignUpUser
 {
-	 public class SignUpUserCommand: IRequest<int>
+	 public class SignUpUserCommand: IRequest<IdentityResult>
 	{
 		public string Email { get; set; }
 		public string  Name { get; set; }
