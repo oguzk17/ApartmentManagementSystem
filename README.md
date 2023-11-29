@@ -1,16 +1,16 @@
-# ApartmentManagementSystem
-Daire Eklenmesi, Silinmesi, Değiştirilmesi.
+#ApartmentManagementSystem
+Adding, Deleting, Changing Flats.
 
-Kullanıcı eklenmesi , Silinmesi ve Güncellenmesi.
+Adding, Deleting and Updating Users.
 
-Fatura ekle-sil-güncelle
+Add-delete-update invoice
 
-Fatura Ödemeleri
+Bill Payments
 
-CQRS yapısının kullanılması,
+Using the CQRS structure,
 
-MediaTR kullanılması
+Using MediaTR
 
-AutoMapper Kullanılması,
+Using AutoMapper,
 
-JWT kullanılması.
+Using JWT.
